@@ -52,4 +52,6 @@ fn main() {
         // for fmt::Display
         println!("{:?}", *color)
     }
+    for format in [
+        Format {
 }
