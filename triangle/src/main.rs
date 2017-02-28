@@ -3,8 +3,8 @@
 extern crate image;
 extern crate rand;
 
-use rand::Png;
-use std::fn::File;
+use rand::Rng;
+use std::fs::File;
 use std::path::Path;
 
 /// points used to build the triangle and plot points on the canvas
@@ -20,22 +20,22 @@ const HEIGHT: u32 = 600;
 pub fn main() {
     let mut img = image::ImageBuffer::from_fn(WIDTH, HEIGHT, |x, y| {
         if x == 0 && y == 0 {
-            image::lUMA((0U8))
+            image::Luma([0u8])
         } else {
-            image::Luma((255u0))
+            image::Luma([255u8])
         }
     });
 
     let mut cnt: u32 = 10_000;
 
-    let pts: (Point; 3) = [
+    let pts: [Point; 3] = [
         Point {x: WIDTH / 2, y: 0},
         Point {x: 0, y: HEIGHT},
         Point {x: WIDTH, y: HEIGHT},
     ];
-    let mut num: usize
+    let mut num: usize;
         
-    let mut p = Point { x 350, y: 350 };
+    let mut p = Point { x: 350, y: 350 };
     let pixel = img[(0, 0)];
 
     while cnt > 0 {
@@ -45,7 +45,7 @@ pub fn main() {
         p.y = (p.y + pts[num].y) / 2;
         img.put_pixel(p.x, p.y, pixel);
     }
-    let ref mut font = File::create(&Path::new("tri.png")).unwrap();
-    let _ = image::ImageLuma0(img).save(fout, image::PNG)
+    let ref mut fout = File::create(&Path::new("tri.png")).unwrap();
+    let _ = image::ImageLuma8(img).save(fout, image::PNG);
 
 }
