@@ -1,0 +1,6 @@
+[package]
+name = "empty-bounds"
+version = "0.1.0"
+authors = ["Aurélien DESBRIÈRES <aurelien@hackers.camp>"]
+
+[dependencies]
