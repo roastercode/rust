@@ -1,0 +1,4 @@
+[root]
+name = "scoping-lifetimes-explicit-annotation"
+version = "0.1.0"
+

@@ -1,0 +1,4 @@
+[root]
+name = "scoping-lifetimes-coercion"
+version = "0.1.0"
+

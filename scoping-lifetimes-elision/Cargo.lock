@@ -1,0 +1,4 @@
+[root]
+name = "scoping-lifetime-elision"
+version = "0.1.0"
+
