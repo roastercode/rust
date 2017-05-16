@@ -1,0 +1,4 @@
+[root]
+name = "multiple-error-early-returns"
+version = "0.1.0"
+
