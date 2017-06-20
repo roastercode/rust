@@ -1,0 +1,4 @@
+[root]
+name = "std-library-result-panic"
+version = "0.1.0"
+
