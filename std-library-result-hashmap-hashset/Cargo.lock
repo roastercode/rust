@@ -1,0 +1,4 @@
+[root]
+name = "std-library-result-hashmap-hashset"
+version = "0.1.0"
+
