@@ -1,6 +1,6 @@
 [package]
 name = "std-misc-foreign-function-interface-2"
 version = "0.1.0"
-authors = ["Aurélien DESBRIÈRES <aurelien@hackers.camp>"]
+authors = ["Aurélien DESBRIÈRES <hello@roastercode.com>"]
 
 [dependencies]
